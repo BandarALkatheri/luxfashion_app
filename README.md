@@ -53,4 +53,32 @@
     │   └── widgets_login_signup    
     └── bindings                      
 
+    lib
+│───main.dart    
+└───src
+    │───config
+    |    └──route.dart
+    │───model
+    │    │──category.dart
+    |    │──data.dart
+    |    └──product.dart
+    │───pages
+    |    │──home_page.dart
+    |    │──main_page.dart
+    |    │──product_detail.dart
+    |    └──shopping_cart_page.dart
+    │───theme
+    |    │──light_color.dart
+    |    └──theme.dart
+    └───widgets
+         │──bottom_n_avigation_bar
+         |   |──bottom_curved_painter.dart
+         |   |──bottom_navigation_bar.dart
+         |   └──centered_elastic_in_curve.dart
+         |──custom_route.dart
+         |──extensions.dart
+         |──product_card.dart
+         │──product_icon.dart
+         └──title_text.dart
+
  
