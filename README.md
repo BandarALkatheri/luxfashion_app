@@ -22,4 +22,35 @@
 ## - Toggle app theme to dark theme.
 
 
+.
+├── android          
+├── assets                         
+├── ios                           
+├── lib                            
+    ├── main.dart                    
+    ├── utils
+    │   ├── constants
+    │   ├── device              
+    │   ├── formatters                 
+    │   ├── helpers            
+    │   └── http   
+    │   ├── local_storage        
+    │   ├── logger              
+    │   ├── theme                 
+    │   ├── validators            
+    │        
+    ├── data
+    │   ├── services                   
+    │   └── repositories             
+    ├── localization              
+    ├── features    authentication                
+    │   └── authentication
+    │   └── personalization 
+    │   └── shop 
+    ├── localization                      
+    └── common                       
+    │   └── styles    
+    │   └── widgets_login_signup    
+    └── bindings                      
+
  
