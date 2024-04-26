@@ -1,6 +1,6 @@
 # luxfashion_app 
 
-<span style="font-size:20em;">Screenshots of the application</span>
+### Screenshots of the application 
 
    figlet "Mr_Robot" | lolcat
 
