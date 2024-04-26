@@ -6,7 +6,7 @@
 
  <# Zad .0>Splash & Intro Screens
 
-<h6>Home & Category Products Screens <h6>
+<h6> Home & Category Products Screens <h6>
 
 Product Details & Cart Screens
 
