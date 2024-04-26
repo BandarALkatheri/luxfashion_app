@@ -1,6 +1,6 @@
-# luxfashion_app1.txt
+# luxfashion_app 
 
-Screenshots of the application
+Screenshots of the application1.txt
 
 Splash & Intro Screens
 
