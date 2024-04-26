@@ -2,7 +2,10 @@
 
 <span style="font-size:20em;">Screenshots of the application</span>
 
-   
+   figlet "Mr_Robot" | lolcat
+
+
+
 
  <# Zad .0>Splash & Intro Screens
 
