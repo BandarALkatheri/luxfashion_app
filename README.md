@@ -1,6 +1,8 @@
 # luxfashion_app 
 
-Screenshots of the application  | lolcat -a -d 500
+<span style="font-size:0.5em;">Screenshots of the application</span>
+
+   
 
 Splash & Intro Screens
 
