@@ -53,37 +53,8 @@
     │   └── widgets_login_signup    
     └── bindings                      
 
-lib
-│───main.dart    
-└───src
-    │───config
-    |    └──route.dart
-    │───model
-    │    │──category.dart
-    |    │──data.dart
-    |    └──product.dart
-    │───pages
-    |    │──home_page.dart
-    |    │──main_page.dart
-    |    │──product_detail.dart
-    |    └──shopping_cart_page.dart
-    │───theme
-    |    │──light_color.dart
-    |    └──theme.dart
-    └───widgets
-         │──bottom_n_avigation_bar
-         |   |──bottom_curved_painter.dart
-         |   |──bottom_navigation_bar.dart
-         |   └──centered_elastic_in_curve.dart
-         |──custom_route.dart
-         |──extensions.dart
-         |──product_card.dart
-         │──product_icon.dart
-         └──title_text.dart
 
-
-
-.
+ .
 ├── android                         - contains files and folders required for running the application on an Android operating system.
 ├── assets                          - contains all images and fonts of your application.
 ├── ios                             - contains files required by the application to run the dart code on iOS platforms.
@@ -105,4 +76,3 @@ lib
     ├── routes                      - contains all the routes of application
     └── theme                       - contains app theme and decoration classes
     └── widgets                     - contains all custom widget classes
- 
