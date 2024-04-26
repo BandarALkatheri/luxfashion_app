@@ -1,6 +1,6 @@
 # luxfashion_app 
 
-<span style="font-size:0.5em;">Screenshots of the application</span>
+<span style="font-size:20em;">Screenshots of the application</span>
 
    
 
