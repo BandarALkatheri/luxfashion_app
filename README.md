@@ -4,9 +4,9 @@
 
    
 
-Splash & Intro Screens
+ <# Zad .0>Splash & Intro Screens
 
-Home & Category Products Screens
+Home & Category Products Screens <# Zad .0>
 
 Product Details & Cart Screens
 
