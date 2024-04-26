@@ -1,6 +1,6 @@
 # luxfashion_app 
 
-Screenshots of the application1.txt
+Screenshots of the application  | lolcat -a -d 500
 
 Splash & Intro Screens
 
