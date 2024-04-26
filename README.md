@@ -53,7 +53,7 @@
     │   └── widgets_login_signup    
     └── bindings                      
 
-    lib
+lib
 │───main.dart    
 └───src
     │───config
