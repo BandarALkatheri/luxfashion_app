@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1087800475553",
+    "project_id": "chatapp-82cd3",
+    "storage_bucket": "chatapp-82cd3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1087800475553:android:27a378a680fab589b355e0",
+        "android_client_info": {
+          "package_name": "com.example.luxfashion_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDw4oYREbpKjsTNJoLxLs9bv_GR_eUsGFU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
