@@ -1,26 +1,26 @@
 # luxfashion_app 
 
-### Screenshots of the application 
+## Screenshots of the application 
 
 
- ### Splash & Intro Screens
+ ## Splash & Intro Screens
 
-### Home & Category Products Screens  
+## Home & Category Products Screens  
 
-### Product Details & Cart Screens 
+## Product Details & Cart Screens 
 
 ### Overview 📙
-## The application is an e-commerce store built using the Clean Architecture to create a comprehensive online shopping experience. The project aims to provide a ready-to-use and customizable foundation for developers, helping them build fantastic shopping apps quickly.
+# The application is an e-commerce store built using the Clean Architecture to create a comprehensive online shopping experience. The project aims to provide a ready-to-use and customizable foundation for developers, helping them build fantastic shopping apps quickly.
 
 
 
 ### Features 🌟
-## - Clean Architecture  
-## - Authentication enabled
-## - User-friendly interface
-## - Firebase for back-end
-## - GetX Statemanagement
-## - Toggle app theme to dark theme.
+# - Clean Architecture  
+# - Authentication enabled
+# - User-friendly interface
+# - Firebase for back-end
+# - GetX Statemanagement
+# - Toggle app theme to dark theme.
 
 
 
