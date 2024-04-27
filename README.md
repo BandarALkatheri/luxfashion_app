@@ -10,7 +10,8 @@
 ### Product Details & Cart Screens 
 
 ### Overview 📙
-## The Flutter Grocery UI is a visually captivating and fully functional User Interface template for a grocery shopping application. This project aims to provide developers with a ready-to-use and customizable UI foundation, helping them to build delightful shopping apps quickly.
+## The application is an e-commerce store built using the Clean Architecture to create a comprehensive online shopping experience. The project aims to provide a ready-to-use and customizable foundation for developers, helping them build fantastic shopping apps quickly.
+
 
 
 ### Features 🌟
