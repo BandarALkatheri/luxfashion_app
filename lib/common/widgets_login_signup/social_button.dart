@@ -1,10 +1,10 @@
+import 'package:flutter/material.dart';
 import 'package:luxfashion_app/utils/constants/color.dart';
 import 'package:luxfashion_app/utils/constants/image.dart';
 import 'package:luxfashion_app/utils/constants/size.dart';
-import 'package:flutter/material.dart';
 
-class TSoicalButton extends StatelessWidget {
-  const TSoicalButton({
+class BSoicalButton extends StatelessWidget {
+  const BSoicalButton({
     Key? key,
   }) : super(key: key);
 
@@ -15,30 +15,30 @@ class TSoicalButton extends StatelessWidget {
       children: [
         Container(
           decoration: BoxDecoration(
-              border: Border.all(color: TColors.grey),
+              border: Border.all(color: BColors.grey),
               borderRadius: BorderRadius.circular(200)),
           child: IconButton(
             onPressed: () {},
             icon: const Image(
-              image: AssetImage(TImage.google),
-              height: TSize.iconmd,
-              width: TSize.iconmd,
+              image: AssetImage(BImage.google),
+              height: BSize.iconmd,
+              width: BSize.iconmd,
             ),
           ),
         ),
         const SizedBox(
-          width: TSize.spacebetweenItem,
+          width: BSize.spacebetweenItem,
         ),
         Container(
           decoration: BoxDecoration(
-              border: Border.all(color: TColors.grey),
+              border: Border.all(color: BColors.grey),
               borderRadius: BorderRadius.circular(200)),
           child: IconButton(
             onPressed: () {},
             icon: const Image(
-              image: AssetImage(TImage.facebook),
-              height: TSize.iconmd,
-              width: TSize.iconmd,
+              image: AssetImage(BImage.facebook),
+              height: BSize.iconmd,
+              width: BSize.iconmd,
             ),
           ),
         ),

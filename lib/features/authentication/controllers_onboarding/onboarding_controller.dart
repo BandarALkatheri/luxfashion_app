@@ -1,7 +1,7 @@
 import 'package:luxfashion_app/features/authentication/screens/login/login.dart';
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
-
+ 
 class OnboardingController extends GetxController {
   static OnboardingController get instace => Get.find();
 
@@ -23,7 +23,10 @@ class OnboardingController extends GetxController {
   // Upadate current index & jump to next page
   void nextPage() {
     if (currentPageIndex.value == 2) {
-      Get.to(const LoginScreen());
+      Get.to(
+     
+        
+        const LoginScreen());
     } else {
       pageController.jumpToPage(currentPageIndex.value + 1);
     }

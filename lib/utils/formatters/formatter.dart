@@ -2,7 +2,7 @@
 
 import 'package:intl/intl.dart';
 
-class TFormatter {
+class BFormatter {
   static String formatDatae(DateTime? data) {
     data ??= DateTime.now();
     return DateFormat('dd-MMM-yyyy').format(data);

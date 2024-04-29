@@ -1,16 +1,72 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:luxfashion_app/features/shop/screens/home/home.dart';
+import 'package:luxfashion_app/features/shop/screens/store/store.dart';
 import 'package:luxfashion_app/utils/constants/color.dart';
 import 'package:luxfashion_app/utils/helpers/helper_func.dart';
-import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 
 class NavigationMenu extends StatelessWidget {
   const NavigationMenu({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    // final controller = Get.put(NavigationController());
-    final isdark = THelperFunction.isDarkMode(context);
+    final controller = Get.put(NavigationController());
+    final isdark = BHelperFunction.isDarkMode(context);
+
+    return Scaffold(
+      bottomNavigationBar: Obx(() => NavigationBar(
+            elevation: 0,
+            height: 70,
+            backgroundColor: isdark ? BColors.black : BColors.white,
+            indicatorColor: isdark
+                ? BColors.white.withOpacity(0.1)
+                : BColors.black.withOpacity(0.1),
+            selectedIndex: controller.selectedIndex.value,
+            onDestinationSelected: (value) {
+              controller.selectedIndex.value = value;
+            },
+            destinations: const [
+              NavigationDestination(
+                  icon: Icon(CupertinoIcons.home), label: "Home"),
+              NavigationDestination(
+                  icon: Icon(CupertinoIcons.settings), label: "Store"),
+              NavigationDestination(
+                  icon: Icon(CupertinoIcons.heart), label: "Wishlist"),
+              NavigationDestination(
+                  icon: Icon(CupertinoIcons.person_fill), label: "Profile"),
+            ],
+          )),
+      body: Obx(() => controller.screen[controller.selectedIndex.value]),
+    );
+  }
+}
+
+class NavigationController extends GetxController {
+  final Rx<int> selectedIndex = 0.obs;
+
+  final screen = [
+    const HomeScreen(),
+    const StoreScreen(),
+    const Column(
+      children: [
+        Text('data'),
+        Text('data'),
+        Text('data'),
+      ],
+    ),
+    Container(
+      color: Colors.black,
+    ),
+    Container(
+      color: Colors.brown,
+    )
+  ];
+}
+
+
+/*
+
+
     PersistentTabController controller0;
 
     controller0 = PersistentTabController(initialIndex: 0);
@@ -53,8 +109,7 @@ class NavigationMenu extends StatelessWidget {
       ),
       //body: Obx(() => controller.screen[controller.selectedIndex.value]),
     );
-  }
-}
+
 
 List<Widget> _buildScreens() {
   return [
@@ -86,6 +141,7 @@ List<PersistentBottomNavBarItem> _navBarsItems() {
       inactiveColorPrimary: CupertinoColors.systemGrey,
     ),
     PersistentBottomNavBarItem(
+      
       icon: const Icon(CupertinoIcons.heart),
       title: ("Wishlist"),
       activeColorPrimary: CupertinoColors.activeBlue,
@@ -100,28 +156,5 @@ List<PersistentBottomNavBarItem> _navBarsItems() {
   ];
 }
 
-
-/*
-class NavigationController extends GetxController {
-  final Rx<int> selectedIndex = 0.obs;
-
-  final screen = [
-    const HomeScreen(),
-    const HomeScreen(),
-    const Column(
-      children: [
-        Text('data'),
-        Text('data'),
-        Text('data'),
-        Text('data'),
-      ],
-    ),
-    Container(
-      color: Colors.black,
-    ),
-    Container(
-      color: Colors.brown,
-    )
-  ];
-}
 */
+

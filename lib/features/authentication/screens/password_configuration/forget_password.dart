@@ -1,8 +1,8 @@
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:luxfashion_app/features/authentication/screens/password_configuration/reset_password.dart';
 import 'package:luxfashion_app/utils/constants/size.dart';
 import 'package:luxfashion_app/utils/constants/text_string.dart';
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 class ForgetPasswordScreen extends StatelessWidget {
   const ForgetPasswordScreen({Key? key}) : super(key: key);
@@ -15,27 +15,27 @@ class ForgetPasswordScreen extends StatelessWidget {
       appBar: AppBar(),
       body: SingleChildScrollView(
           child: Padding(
-        padding: const EdgeInsets.all(TSize.defaultSpace),
+        padding: const EdgeInsets.all(BSize.defaultSpace),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             //title , subtitle
 
             Text(
-              TTexts.forgetPassword,
+              BTexts.forgetPassword,
               style: Theme.of(context).textTheme.headlineMedium,
             ),
             const SizedBox(
-              height: TSize.spacebetweenItem,
+              height: BSize.spacebetweenItem,
             ),
 
             Text(
-              TTexts.forgetPasswordSubTitle,
+              BTexts.forgetPasswordSubTitle,
               style: Theme.of(context).textTheme.labelMedium,
             ),
 
             const SizedBox(
-              height: TSize.spacebetweenSections,
+              height: BSize.spacebetweenSections,
             ),
 
             //Form email
@@ -43,12 +43,12 @@ class ForgetPasswordScreen extends StatelessWidget {
             TextFormField(
               decoration: const InputDecoration(
                 prefixIcon: Icon(Icons.email),
-                labelText: TTexts.email,
+                labelText: BTexts.email,
               ),
             ),
 
             const SizedBox(
-              height: TSize.spacebetweenSections,
+              height: BSize.spacebetweenSections,
             ),
 
             SizedBox(
@@ -57,7 +57,7 @@ class ForgetPasswordScreen extends StatelessWidget {
                 onPressed: () {
                   Get.to(RestPasswordScreen());
                 },
-                child: const Text(TTexts.Submit),
+                child: const Text(BTexts.submit),
               ),
             ),
           ],

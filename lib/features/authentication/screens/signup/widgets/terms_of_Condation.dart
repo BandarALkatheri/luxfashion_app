@@ -4,14 +4,14 @@ import 'package:luxfashion_app/utils/constants/size.dart';
 import 'package:luxfashion_app/utils/constants/text_string.dart';
 import 'package:luxfashion_app/utils/helpers/helper_func.dart';
 
-class TTermsOfCondation extends StatelessWidget {
-  const TTermsOfCondation({
+class BTermsOfCondation extends StatelessWidget {
+  const BTermsOfCondation({
     Key? key,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    final isDark = THelperFunction.isDarkMode(context);
+    final isDark = BHelperFunction.isDarkMode(context);
 
     return Row(
       children: [
@@ -21,31 +21,31 @@ class TTermsOfCondation extends StatelessWidget {
           onChanged: (value) {},
         ),
         const SizedBox(
-          width: TSize.spacebetweenItem,
+          width: BSize.spacebetweenItem,
         ),
         Text.rich(
           TextSpan(children: [
             TextSpan(
-              text: '${TTexts.iAgreeTo} ',
+              text: '${BTexts.iAgreeTo} ',
               style: Theme.of(context).textTheme.bodySmall,
             ),
             TextSpan(
-              text: TTexts.privacyPolicy,
+              text: BTexts.privacyPolicy,
               style: Theme.of(context).textTheme.bodySmall!.apply(
-                  color: isDark ? TColors.white : TColors.primary,
+                  color: isDark ? BColors.white : BColors.primary,
                   decoration: TextDecoration.underline,
-                  decorationColor: isDark ? TColors.white : TColors.primary),
+                  decorationColor: isDark ? BColors.white : BColors.primary),
             ),
             TextSpan(
               text: ' and ',
               style: Theme.of(context).textTheme.bodySmall,
             ),
             TextSpan(
-              text: TTexts.termsOfUse,
+              text: BTexts.termsOfUse,
               style: Theme.of(context).textTheme.bodySmall!.apply(
-                  color: isDark ? TColors.white : TColors.primary,
+                  color: isDark ? BColors.white : BColors.primary,
                   decoration: TextDecoration.underline,
-                  decorationColor: isDark ? TColors.white : TColors.primary),
+                  decorationColor: isDark ? BColors.white : BColors.primary),
             ),
           ]),
         ),

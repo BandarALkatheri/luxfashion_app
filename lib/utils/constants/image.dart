@@ -1,4 +1,4 @@
-class TImage {
+class BImage {
   //logo app
   static const String logoApp = "assets/logo/logo.png";
 

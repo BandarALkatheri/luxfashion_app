@@ -1,4 +1,4 @@
-class TPricingCalculator {
+class BPricingCalculator {
 //calculate price based on tax and shipping
   static double calculateTotalPrice(double productPrice, double location) {
     double texRate = getTaxRateForLocation('KSA');

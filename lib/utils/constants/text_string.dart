@@ -1,4 +1,4 @@
-class TTexts {
+class BTexts {
 // onBoarding Texts
   static const String onBoardingTitle1 = 'Choose your product';
   static const String onBoardingTitle2 = 'select Payment Method';
@@ -13,10 +13,10 @@ class TTexts {
 
 // Home
   static const String homeAppBarTitle = 'Good Day for Shopping';
-  static const String HomeAppBarSubTitle = 'Taimoor Sikandar';
+  static const String homeAppBarSubTitle = 'Taimoor Sikandar';
 
   static const String firstName = "Full Name";
-  static const String LastName = "Last Name";
+  static const String lastName = "Last Name";
   static const String email = "E-Mail";
   static const String password = "Password";
   static const String newPassword = "New Password";
@@ -36,9 +36,11 @@ class TTexts {
   static const String verificationCode = "verificationCode";
   static const String resendEmail = "Resend Email";
   static const String resendEmailIn = "Resend email in";
-  static const String Submit = "Submit";
-  static const String Done = "Done";
+  static const String submit = "Submit";
+  static const String done = "Done";
 
+  static const String nameAppBarTitle = 'Good day for shopping';
+  static const String nameAppBarSubTitle = 'Tainoor Sikander';
   // Authentication Headings Text
 
   static const String loginTitle = "Welcome back, ";

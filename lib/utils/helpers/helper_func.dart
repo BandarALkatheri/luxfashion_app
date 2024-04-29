@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:intl/intl.dart';
 //import 'package:intl/intl.dart';
 
-class THelperFunction {
+class BHelperFunction {
   static Color? getColor(String value) {
 // Dfine your produt specific here and it will match the attributes colors and show specific
 
@@ -34,7 +34,7 @@ class THelperFunction {
     }
   }
 
-  static void ShowSnackBar(String message) {
+  static void showSnackBar(String message) {
     ScaffoldMessenger.of(Get.context!).showSnackBar(
       SnackBar(
         content: Text(message),
@@ -42,7 +42,7 @@ class THelperFunction {
     );
   }
 
-  static void ShowAlert(String title, String message) {
+  static void showAlert(String title, String message) {
     showDialog(
       context: Get.context!,
       builder: ((context) {
@@ -95,6 +95,7 @@ class THelperFunction {
       {String format = 'dd MMM yyy'}) {
     return DateFormat(format).format(date);
   }
+
   static List<T> removeDuplicates<T>(List<T> list) {
     return list.toSet().toList();
   }

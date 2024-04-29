@@ -25,27 +25,27 @@ class VerifyEmailScreen extends StatelessWidget {
       ),
       body: SingleChildScrollView(
           child: Padding(
-        padding: const EdgeInsets.all(TSize.defaultSpace),
+        padding: const EdgeInsets.all(BSize.defaultSpace),
         child: Column(
           children: [
             // image
 
             Image(
-              image: const AssetImage(TImage.logoApp),
-              width: THelperFunction.screenWidth() * 0.6,
+              image: const AssetImage(BImage.logoApp),
+              width: BHelperFunction.screenWidth() * 0.6,
             ),
             const SizedBox(
-              height: TSize.spacebetweenSections,
+              height: BSize.spacebetweenSections,
             ),
             //title , subtitle
 
             Text(
-              TTexts.confirmEmail,
+              BTexts.confirmEmail,
               style: Theme.of(context).textTheme.headlineMedium,
               textAlign: TextAlign.center,
             ),
             const SizedBox(
-              height: TSize.spacebetweenItem,
+              height: BSize.spacebetweenItem,
             ),
 
             Text(
@@ -54,17 +54,17 @@ class VerifyEmailScreen extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
             const SizedBox(
-              height: TSize.spacebetweenItem,
+              height: BSize.spacebetweenItem,
             ),
 
             Text(
-              TTexts.confirmEmailSubTitle,
+              BTexts.confirmEmailSubTitle,
               style: Theme.of(context).textTheme.labelMedium,
               textAlign: TextAlign.center,
             ),
 
             const SizedBox(
-              height: TSize.spacebetweenSections,
+              height: BSize.spacebetweenSections,
             ),
 
             //button
@@ -74,25 +74,25 @@ class VerifyEmailScreen extends StatelessWidget {
               child: ElevatedButton(
                 onPressed: () {
                   Get.to(SuccessScreen(
-                    image: TImage.logoApp,
-                    title: TTexts.youraccountcreatedTitle,
-                    subtitle: TTexts.youraccountcreatedSubTitle,
+                    image: BImage.logoApp,
+                    title: BTexts.youraccountcreatedTitle,
+                    subtitle: BTexts.youraccountcreatedSubTitle,
                     onPress: () {
                       Get.to(const LoginScreen());
                     },
                   ));
                 },
-                child: const Text(TTexts.tcontinue),
+                child: const Text(BTexts.tcontinue),
               ),
             ),
             const SizedBox(
-              height: TSize.spacebetweenItem,
+              height: BSize.spacebetweenItem,
             ),
             SizedBox(
               width: double.infinity,
               child: TextButton(
                 onPressed: () {},
-                child: const Text(TTexts.resendEmail),
+                child: const Text(BTexts.resendEmail),
               ),
             ),
           ],

@@ -1,10 +1,10 @@
-import 'package:luxfashion_app/utils/constants/color.dart';
 import 'package:flutter/material.dart';
+import 'package:luxfashion_app/utils/constants/color.dart';
 
-class TFormDivider extends StatelessWidget {
-  const TFormDivider({Key? key, required this.DividerText}) : super(key: key);
+class BFormDivider extends StatelessWidget {
+  const BFormDivider({Key? key, required this.dividerText}) : super(key: key);
 
-  final String DividerText;
+  final String dividerText;
 
   @override
   Widget build(BuildContext context) {
@@ -13,18 +13,18 @@ class TFormDivider extends StatelessWidget {
       children: [
         const Flexible(
             child: Divider(
-          color: TColors.grey,
+          color: BColors.grey,
           thickness: 1,
           endIndent: 5,
           indent: 60,
         )),
         Text(
-          DividerText,
+          dividerText,
           style: Theme.of(context).textTheme.labelMedium,
         ),
         const Flexible(
             child: Divider(
-          color: TColors.grey,
+          color: BColors.grey,
           thickness: 1,
           endIndent: 60,
           indent: 5,

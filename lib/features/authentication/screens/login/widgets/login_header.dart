@@ -1,10 +1,10 @@
+import 'package:flutter/material.dart';
 import 'package:luxfashion_app/utils/constants/image.dart';
 import 'package:luxfashion_app/utils/constants/size.dart';
 import 'package:luxfashion_app/utils/constants/text_string.dart';
-import 'package:flutter/material.dart';
 
-class TLoginHeader extends StatelessWidget {
-  const TLoginHeader({
+class BLoginHeader extends StatelessWidget {
+  const BLoginHeader({
     Key? key,
   }) : super(key: key);
 
@@ -14,18 +14,18 @@ class TLoginHeader extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         const Image(
-          image: AssetImage(TImage.logoApp),
+          image: AssetImage(BImage.logoApp),
           height: 120,
         ),
         Text(
-          TTexts.loginTitle,
+          BTexts.loginTitle,
           style: Theme.of(context).textTheme.headlineMedium,
         ),
         const SizedBox(
-          height: TSize.sm,
+          height: BSize.sm,
         ),
         Text(
-          TTexts.loginSubTitle,
+          BTexts.loginSubTitle,
           style: Theme.of(context).textTheme.bodyMedium,
         ),
       ],

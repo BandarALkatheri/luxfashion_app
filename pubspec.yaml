@@ -40,6 +40,9 @@ dependencies:
   path_provider_android: ^2.2.4
   persistent_bottom_nav_bar: ^5.0.2
   smooth_page_indicator: ^1.1.0
+  carousel_slider: ^4.2.1
+
+ 
 
 dev_dependencies:
   flutter_lints: ^3.0.1
@@ -61,6 +64,8 @@ flutter:
     - assets/brands/
     - assets/images/animations/
     - assets/images/on_boarding_images/
+    - assets/images/banners/
+
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg

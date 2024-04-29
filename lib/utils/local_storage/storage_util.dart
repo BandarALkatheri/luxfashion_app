@@ -1,13 +1,13 @@
 /*
 import 'package:get_storage/get_storage.dart';
 
-class TlocalStorage {
-  static final TlocalStorage _instance = TlocalStorage._internal();
+class BlocalStorage {
+  static final BlocalStorage _instance = BlocalStorage._internal();
 
-  factory TlocalStorage() {
+  factory BlocalStorage() {
     return _instance;
   }
-  TlocalStorage._internal();
+  BlocalStorage._internal();
   final _storage = GetStorage();
 
   //Generic method to save data

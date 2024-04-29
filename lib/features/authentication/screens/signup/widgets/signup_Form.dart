@@ -1,12 +1,12 @@
-import 'package:luxfashion_app/features/authentication/screens/signup/verify_email.dart';
-import 'package:luxfashion_app/features/authentication/screens/signup/widgets/terms_of_Condation.dart';
-import 'package:luxfashion_app/utils/constants/size.dart';
-import 'package:luxfashion_app/utils/constants/text_string.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:luxfashion_app/features/authentication/screens/signup/verify_email.dart';
+import 'package:luxfashion_app/features/authentication/screens/signup/widgets/terms_of_condation.dart';
+import 'package:luxfashion_app/utils/constants/size.dart';
+import 'package:luxfashion_app/utils/constants/text_string.dart';
 
-class TSignUpForm extends StatelessWidget {
-  const TSignUpForm({
+class BSignUpForm extends StatelessWidget {
+  const BSignUpForm({
     Key? key,
   }) : super(key: key);
 
@@ -18,53 +18,53 @@ class TSignUpForm extends StatelessWidget {
         // full Name
         TextFormField(
           decoration: const InputDecoration(
-              prefixIcon: Icon(Icons.person), labelText: TTexts.firstName),
+              prefixIcon: Icon(Icons.person), labelText: BTexts.firstName),
         ),
         const SizedBox(
-          height: TSize.spacebetweenInputFields,
+          height: BSize.spacebetweenInputFields,
         ),
 
         // user Name
         TextFormField(
           decoration: const InputDecoration(
-              labelText: TTexts.username, prefixIcon: Icon(Icons.person_2)),
+              labelText: BTexts.username, prefixIcon: Icon(Icons.person_2)),
         ),
         const SizedBox(
-          height: TSize.spacebetweenInputFields,
+          height: BSize.spacebetweenInputFields,
         ),
 
         //email
         TextFormField(
           decoration: const InputDecoration(
-              prefixIcon: Icon(Icons.email), labelText: TTexts.email),
+              prefixIcon: Icon(Icons.email), labelText: BTexts.email),
         ),
         const SizedBox(
-          height: TSize.spacebetweenInputFields,
+          height: BSize.spacebetweenInputFields,
         ),
         //phone number
         TextFormField(
           decoration: const InputDecoration(
             prefixIcon: Icon(Icons.phone),
-            labelText: TTexts.phoneNo,
+            labelText: BTexts.phoneNo,
           ),
         ),
         const SizedBox(
-          height: TSize.spacebetweenInputFields,
+          height: BSize.spacebetweenInputFields,
         ),
         // password
 
         TextFormField(
           decoration: const InputDecoration(
               prefixIcon: Icon(Icons.password),
-              labelText: TTexts.password,
+              labelText: BTexts.password,
               suffixIcon: Icon(Icons.remove_red_eye)),
         ),
 
         const SizedBox(
-          height: TSize.spacebetweenSections,
+          height: BSize.spacebetweenSections,
         ),
 
-        const TTermsOfCondation(),
+        const BTermsOfCondation(),
 
         SizedBox(
           width: double.infinity,
@@ -72,11 +72,11 @@ class TSignUpForm extends StatelessWidget {
             onPressed: () {
               Get.to(const VerifyEmailScreen());
             },
-            child: const Text(TTexts.createAccount),
+            child: const Text(BTexts.createAccount),
           ),
         ),
         const SizedBox(
-          height: TSize.spacebetweenSections,
+          height: BSize.spacebetweenSections,
         ),
       ],
     ));

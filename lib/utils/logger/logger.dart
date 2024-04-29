@@ -3,7 +3,7 @@
 
 import 'package:logger/logger.dart';
 
-class TLoggerHelper {
+class BLoggerHelper {
   static final Logger _logger = Logger(
     printer: PrettyPrinter(),
     //custom the log level based on ur needs

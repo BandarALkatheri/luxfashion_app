@@ -1,4 +1,3 @@
- 
 import 'dart:io';
 
 import 'package:flutter/foundation.dart';
@@ -6,9 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 
-  
-
-class TDeviceUtils {
+class BDeviceUtils {
   static void hideKeyBoard(BuildContext context) {
     FocusScope.of(context).requestFocus(FocusNode());
   }
@@ -37,6 +34,10 @@ class TDeviceUtils {
 
   static double getScreenHeight() {
     return MediaQuery.of(Get.context!).size.height;
+  }
+
+  static double getScreenwidth() {
+    return MediaQuery.of(Get.context!).size.width;
   }
 
   static double getPixelRatio() {

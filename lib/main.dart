@@ -4,6 +4,7 @@ import 'package:luxfashion_app/features/authentication/screens/screens_onboardin
 import 'package:luxfashion_app/utils/theme/theme.dart';
 
 void main() {
+  //first
   runApp(const MyApp());
 }
 

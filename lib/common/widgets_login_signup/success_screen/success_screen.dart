@@ -1,9 +1,9 @@
+import 'package:flutter/material.dart';
 import 'package:luxfashion_app/common/styles/spacing_styles.dart';
 import 'package:luxfashion_app/utils/constants/image.dart';
 import 'package:luxfashion_app/utils/constants/size.dart';
 import 'package:luxfashion_app/utils/constants/text_string.dart';
 import 'package:luxfashion_app/utils/helpers/helper_func.dart';
-import 'package:flutter/material.dart';
 
 class SuccessScreen extends StatelessWidget {
   const SuccessScreen(
@@ -22,37 +22,37 @@ class SuccessScreen extends StatelessWidget {
     return Scaffold(
       body: SingleChildScrollView(
           child: Padding(
-        padding: TSpacingStyle.paddingWithAppBarHeight,
+        padding: BSpacingStyle.paddingWithAppBarHeight,
         child: Column(
           children: [
             // image
 
             Image(
-              image: const AssetImage(TImage.logoApp),
-              width: THelperFunction.screenWidth() * 0.6,
+              image: const AssetImage(BImage.logoApp),
+              width: BHelperFunction.screenWidth() * 0.6,
             ),
             const SizedBox(
-              height: TSize.spacebetweenSections,
+              height: BSize.spacebetweenSections,
             ),
             //title , subtitle
 
             Text(
-              TTexts.youraccountcreatedTitle,
+              BTexts.youraccountcreatedTitle,
               style: Theme.of(context).textTheme.headlineMedium,
               textAlign: TextAlign.center,
             ),
             const SizedBox(
-              height: TSize.spacebetweenItem,
+              height: BSize.spacebetweenItem,
             ),
 
             Text(
-              TTexts.youraccountcreatedSubTitle,
+              BTexts.youraccountcreatedSubTitle,
               style: Theme.of(context).textTheme.labelMedium,
               textAlign: TextAlign.center,
             ),
 
             const SizedBox(
-              height: TSize.spacebetweenSections,
+              height: BSize.spacebetweenSections,
             ),
 
             //button
@@ -61,11 +61,11 @@ class SuccessScreen extends StatelessWidget {
               width: double.infinity,
               child: ElevatedButton(
                 onPressed: onPress,
-                child: const Text(TTexts.tcontinue),
+                child: const Text(BTexts.tcontinue),
               ),
             ),
             const SizedBox(
-              height: TSize.spacebetweenItem,
+              height: BSize.spacebetweenItem,
             ),
           ],
         ),

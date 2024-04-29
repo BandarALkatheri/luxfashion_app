@@ -1,7 +1,7 @@
 /*
 import 'package:http/http.dart' as http;
 
-class THttpHelper {
+class BHttpHelper {
   static const String _baseUrl =
       'http://your-api-base-url.com'; //replace with your api base url
 

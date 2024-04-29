@@ -1,4 +1,4 @@
-class TSize {
+class BSize {
   //padding and margin sizes
   static const double xs = 4.0;
   static const double sm = 8.0;
@@ -50,7 +50,7 @@ class TSize {
   static const double cardRadiusmd = 12.0;
   static const double cardRadiusSm = 10.0;
   static const double cardRadiusXs = 6.0;
-  static const double CardElevetion = 2.0;
+  static const double cardElevetion = 2.0;
   //image carousle height
   static const double imageCarouselHeight = 200.0;
   //loaging indicator size

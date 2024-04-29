@@ -1,6 +1,6 @@
+import 'package:flutter/material.dart';
 import 'package:luxfashion_app/utils/constants/size.dart';
 import 'package:luxfashion_app/utils/helpers/helper_func.dart';
-import 'package:flutter/material.dart';
 
 class OnBoardingPage extends StatelessWidget {
   const OnBoardingPage({
@@ -13,12 +13,12 @@ class OnBoardingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(TSize.defaultSpace),
+      padding: const EdgeInsets.all(BSize.defaultSpace),
       child: Column(
         children: [
           Image(
-            width: THelperFunction.screenWidth() * 0.5,
-            height: THelperFunction.screenHeight() * 0.5,
+            width: BHelperFunction.screenWidth() * 0.5,
+            height: BHelperFunction.screenHeight() * 0.5,
             image: AssetImage(image),
           ),
           Text(
@@ -27,7 +27,7 @@ class OnBoardingPage extends StatelessWidget {
             textAlign: TextAlign.center,
           ),
           const SizedBox(
-            height: TSize.spacebetweenItem,
+            height: BSize.spacebetweenItem,
           ),
           Text(
             subtitle,

@@ -1,10 +1,10 @@
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:luxfashion_app/common/styles/spacing_styles.dart';
 import 'package:luxfashion_app/utils/constants/image.dart';
 import 'package:luxfashion_app/utils/constants/size.dart';
 import 'package:luxfashion_app/utils/constants/text_string.dart';
 import 'package:luxfashion_app/utils/helpers/helper_func.dart';
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 class RestPasswordScreen extends StatelessWidget {
   const RestPasswordScreen({
@@ -26,37 +26,37 @@ class RestPasswordScreen extends StatelessWidget {
       ),
       body: SingleChildScrollView(
           child: Padding(
-        padding: TSpacingStyle.paddingWithAppBarHeight,
+        padding: BSpacingStyle.paddingWithAppBarHeight,
         child: Column(
           children: [
             // image
 
             Image(
-              image: const AssetImage(TImage.logoApp),
-              width: THelperFunction.screenWidth() * 0.6,
+              image: const AssetImage(BImage.logoApp),
+              width: BHelperFunction.screenWidth() * 0.6,
             ),
             const SizedBox(
-              height: TSize.spacebetweenSections,
+              height: BSize.spacebetweenSections,
             ),
             //title , subtitle
 
             Text(
-              TTexts.changeYourPasswordTitle,
+              BTexts.changeYourPasswordTitle,
               style: Theme.of(context).textTheme.headlineMedium,
               textAlign: TextAlign.center,
             ),
             const SizedBox(
-              height: TSize.spacebetweenItem,
+              height: BSize.spacebetweenItem,
             ),
 
             Text(
-              TTexts.changeYourPasswordSubTitle,
+              BTexts.changeYourPasswordSubTitle,
               style: Theme.of(context).textTheme.labelMedium,
               textAlign: TextAlign.center,
             ),
 
             const SizedBox(
-              height: TSize.spacebetweenSections,
+              height: BSize.spacebetweenSections,
             ),
 
             //button
@@ -65,17 +65,17 @@ class RestPasswordScreen extends StatelessWidget {
               width: double.infinity,
               child: ElevatedButton(
                 onPressed: () {},
-                child: const Text(TTexts.tcontinue),
+                child: const Text(BTexts.tcontinue),
               ),
             ),
             const SizedBox(
-              height: TSize.spacebetweenItem,
+              height: BSize.spacebetweenItem,
             ),
             SizedBox(
               width: double.infinity,
               child: TextButton(
                 onPressed: () {},
-                child: const Text(TTexts.resendEmail),
+                child: const Text(BTexts.resendEmail),
               ),
             ),
           ],
