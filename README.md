@@ -1,16 +1,63 @@
-# luxfashion_app
+# luxfashion_app 
 
-A new Flutter project.
+## Screenshots of the application 
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+ ## Splash & Intro Screens
 
-A few resources to get you started if this is your first Flutter project:
+## Home & Category Products Screens  
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Product Details & Cart Screens 
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Overview 📙
+# The application is an e-commerce store built using the Clean Architecture to create a comprehensive online shopping experience. The project aims to provide a ready-to-use and customizable foundation for developers, helping them build fantastic shopping apps quickly.
+
+
+
+### Features 🌟
+# - Clean Architecture  
+# - Authentication enabled
+# - User-friendly interface
+# - Firebase for back-end
+# - GetX Statemanagement
+# - Toggle app theme to dark theme.
+
+
+
+### Project Structure
+```sh
+
+.
+├── android          
+├── assets                         
+├── ios                           
+├── lib                            
+    ├── main.dart                    
+    ├── utils
+    │   ├── constants
+    │   ├── device              
+    │   ├── formatters                 
+    │   ├── helpers            
+    │   └── http   
+    │   ├── local_storage        
+    │   ├── logger              
+    │   ├── theme                 
+    │   ├── validators            
+    │        
+    ├── data
+    │   ├── services                   
+    │   └── repositories             
+    ├── localization              
+    ├── features    authentication                
+    │   └── authentication
+    │   └── personalization 
+    │   └── shop 
+    ├── localization                      
+    └── common                       
+    │   └── styles    
+    │   └── widgets_login_signup    
+    └── bindings                      
+
+
+ . 
+```
