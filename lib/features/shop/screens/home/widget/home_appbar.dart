@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:luxfashion_app/common/appBar/appbar.dart';
-import 'package:luxfashion_app/common/products/cart/cart_menu_icon.dart';
+import 'package:luxfashion_app/common/widgets/products/cart/cart_menu_icon.dart';
+import 'package:luxfashion_app/features/shop/screens/cart/cart.dart';
 import 'package:luxfashion_app/utils/constants/color.dart';
 import 'package:luxfashion_app/utils/constants/text_string.dart';
 
@@ -30,7 +32,9 @@ class BHomeAppBar extends StatelessWidget {
       ]),
       acttions: [
         BCart(
-          onPress: () {},
+          onPress: () {
+            Get.to(CartScreen());
+          },
         )
       ],
     );

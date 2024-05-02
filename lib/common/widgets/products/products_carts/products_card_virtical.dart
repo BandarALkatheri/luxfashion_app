@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:luxfashion_app/common/custom_shapes/Containers/rounded_container.dart';
-import 'package:luxfashion_app/common/icons/tcircular_icon.dart';
+import 'package:luxfashion_app/common/icons/circular_icon.dart';
 import 'package:luxfashion_app/common/styles/shadows.dart';
 import 'package:luxfashion_app/common/text/brand_title_with_verifid_icon.dart';
 import 'package:luxfashion_app/common/text/prodcut_price_text.dart';
 import 'package:luxfashion_app/common/text/product_title_text.dart';
 import 'package:luxfashion_app/common/widgets/images/roundedimage.dart';
+import 'package:luxfashion_app/features/shop/screens/prodcut_details/product_details.dart';
 import 'package:luxfashion_app/utils/constants/color.dart';
 import 'package:luxfashion_app/utils/constants/size.dart';
 import 'package:luxfashion_app/utils/helpers/helper_func.dart';
@@ -18,7 +20,7 @@ class BProductCardVirtical extends StatelessWidget {
     final isDark = BHelperFunction.isDarkMode(context);
 
     return GestureDetector(
-      onTap: () {},
+      onTap: () => Get.to(const ProductDetailScreen()),
       child: Container(
         width: 160,
         padding: const EdgeInsets.all(1),
@@ -37,7 +39,7 @@ class BProductCardVirtical extends StatelessWidget {
               child: Stack(children: [
                 // thumbnails
                 const BRoundedimage(
-                  imageUrl: 'assets/logo/logo.png',
+                  imageUrl: 'assets/logo/shoe3.png',
                   applyImageRadius: true,
                 ),
                 // Sale Tag
@@ -62,7 +64,7 @@ class BProductCardVirtical extends StatelessWidget {
                 const Positioned(
                   top: 0,
                   right: 0,
-                  child: TCircularIcon(
+                  child: BCircularIcon(
                     color: Colors.red,
                     icon: Icons.heart_broken,
                   ),

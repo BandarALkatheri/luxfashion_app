@@ -14,10 +14,10 @@ class BPrimaryHeaderContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return BcurvedWidget(
       child: Container(
-        height: 400,
-        width: double.infinity,
+       
+             //   width: double.infinity,
         color: BColors.primary,
-        padding: const EdgeInsets.all(0),
+       // padding: const EdgeInsets.all(0),
         child: Stack(children: [child]),
       ),
     );

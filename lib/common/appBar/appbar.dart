@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:luxfashion_app/utils/constants/color.dart';
 import 'package:luxfashion_app/utils/constants/size.dart';
 import 'package:luxfashion_app/utils/device/device_utl.dart';
+import 'package:luxfashion_app/utils/helpers/helper_func.dart';
 
 class BAppBar extends StatelessWidget implements PreferredSizeWidget {
   const BAppBar(
@@ -33,7 +35,12 @@ class BAppBar extends StatelessWidget implements PreferredSizeWidget {
                   onPressed: () {
                     Get.back();
                   },
-                  icon: const Icon(Icons.arrow_back))
+                  icon: Icon(
+                    Icons.arrow_back,
+                    color: BHelperFunction.isDarkMode(context)
+                        ? BColors.white
+                        : BColors.dark,
+                  ))
               : leadingIconData != null
                   ? IconButton(
                       onPressed: leadingOnPressed,

@@ -5,13 +5,13 @@ import 'package:luxfashion_app/utils/helpers/helper_func.dart';
 
 import '../../utils/constants/color.dart';
 
-class TCircularIcon extends StatelessWidget {
+class BCircularIcon extends StatelessWidget {
   // custom Circular icon widget with a background color
   // properties
   // container -> , width , height , backgroundColor
 
   //icon -> size , color onPress
-  const TCircularIcon({
+  const BCircularIcon({
     Key? key,
     this.height,
     this.size = BSize.lg,

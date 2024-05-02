@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:luxfashion_app/common/layouts/grid_layout.dart';
-import 'package:luxfashion_app/common/products/products_carts/products_card_virtical.dart';
+import 'package:luxfashion_app/common/widgets/products/products_carts/products_card_virtical.dart';
 import 'package:luxfashion_app/common/text/section_heading.dart';
 import 'package:luxfashion_app/common/widgets/brands/brand_show_case.dart';
 

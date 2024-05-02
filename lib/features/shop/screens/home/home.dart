@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:luxfashion_app/common/custom_shapes/Containers/primary_header_container.dart';
 import 'package:luxfashion_app/common/custom_shapes/Containers/search_container.dart';
 import 'package:luxfashion_app/common/layouts/grid_layout.dart';
-import 'package:luxfashion_app/common/products/products_carts/products_card_virtical.dart';
+import 'package:luxfashion_app/common/widgets/products/products_carts/products_card_virtical.dart';
 import 'package:luxfashion_app/common/text/section_heading.dart';
 import 'package:luxfashion_app/features/shop/screens/home/widget/home_appbar.dart';
 import 'package:luxfashion_app/features/shop/screens/home/widget/home_categories.dart';
@@ -54,7 +54,8 @@ class HomeScreen extends StatelessWidget {
                       BHomeCategories()
                     ],
                   ),
-                )
+                ),
+                SizedBox(height: BSize.spacebetweenSections,)
               ],
             )),
             Padding(

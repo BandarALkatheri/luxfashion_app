@@ -1,8 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:luxfashion_app/features/personalization/screens/settings/settings.dart';
 import 'package:luxfashion_app/features/shop/screens/home/home.dart';
 import 'package:luxfashion_app/features/shop/screens/store/store.dart';
+import 'package:luxfashion_app/features/shop/screens/wishlist/wishlist.dart';
 import 'package:luxfashion_app/utils/constants/color.dart';
 import 'package:luxfashion_app/utils/helpers/helper_func.dart';
 
@@ -47,19 +49,9 @@ class NavigationController extends GetxController {
   final screen = [
     const HomeScreen(),
     const StoreScreen(),
-    const Column(
-      children: [
-        Text('data'),
-        Text('data'),
-        Text('data'),
-      ],
-    ),
-    Container(
-      color: Colors.black,
-    ),
-    Container(
-      color: Colors.brown,
-    )
+    const FavouritScreen(),
+  
+    const SettingsScreen()
   ];
 }
 

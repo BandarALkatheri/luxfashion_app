@@ -29,7 +29,15 @@ class BHelperFunction {
       return Colors.teal;
     } else if (value == 'indigo') {
       return Colors.indigo;
-    } else {
+      
+    } 
+    else if (value == 'Yellow') {
+      return Colors.yellow;
+      
+    } 
+    
+    
+    else {
       return null;
     }
   }
